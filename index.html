@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
-    <form action="/myhandling-form-page">
-        <p>
-            <label for="name">Name</label>
-            <input type="text" id="name">
-        </p>
-        <p>
-            <label for="mail">Mail</label>
-            <input type="email" id="mail">
-        </p>
-        <p>
-            <label for="msg">Message</label>
-            <textarea name="user_messsage" id="msg">Default Text</textarea>
-        </p>
-        <p class="button">
+    <form>
+        <h1>to: Mozilla</h1>
+
+        <div id="from">
+            <label for="name">from:</label>
+            <input type="text" id="name" name="user_name" />
+        </div>
+
+        <div id="reply">
+            <label for="mail">reply:</label>
+            <input type="email" id="mail" name="user_email" />
+        </div>
+
+        <div id="message">
+            <label for="msg">Your message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
+
+        <div class="button">
             <button type="submit">Send your message</button>
-        </p>
+        </div>
     </form>
 </body>
 </html>
